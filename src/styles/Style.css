@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url("../fonts/futura-heavy-font.ttf") format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F7F7F7;
+}
+.fcmb {
+  font-family: 'Futura';
+}
+
+/* Dashboard*/
+.dashboard-wrap {
+  display: flex;
+}
+
+/* Dashboard Sidebar */
+.sidebar {
+  /*position: fixed;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  width: 96px;
+  height: 904px;
+  background-color: #052231;
+}
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+  border-bottom: 1px solid rgba(232, 231, 234, 0.1);
+}
+.logo {
+  display: block;
+}
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 252px;
+  padding: 32px 0 20px;
+  border-bottom: 1px solid rgba(232, 231, 234, 0.1);
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.menu-icon:hover {
+  background-color: #23B3E8;
+}
+.menu-icon--background {
+  background-color: #23B3E8;
+}
+.users-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 265px;
+  border-bottom: 1px solid rgba(232, 231, 234, 0.1);
+}
+.user-icon--bg-color-1,
+.user-icon--bg-color-2,
+.user-icon--bg-color-3,
+.user-icon--bg-color-4,
+.user-icon--bg-color-5 {
+  background-color: #23B3E8;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  font-size: 6px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
+.user-icon--bg-color-2 {
+  background-color: #4DBD98;
+}
+.user-icon--bg-color-3 {
+  background-color: #3D43A2;
+}
+.user-icon--bg-color-4 {
+  background-color: #F15832;
+}
+.user-icon--bg-color-5 {
+  background-color: #004F71;
+}
+.collapse-icon-wrap {
+  height: 300px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+/* Bottom Alert */
+.bottom-alert {
+  background-color: #4DBD98;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+.bottom-alert--text {
+  color: #FFFFFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
