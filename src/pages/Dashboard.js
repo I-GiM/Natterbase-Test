@@ -21,9 +21,9 @@ const DashboardModule = () => {
             ownerName={ orgOwner.ownerOne.ownerName }
             ownerEmail={ orgOwner.ownerOne.ownerEmail }
           />
-        </div>
-        <div className="dashboard-content">
+          <div className="dashboard-content">
 
+          </div>
         </div>
       </div>
       <div className="bottom-alert">
