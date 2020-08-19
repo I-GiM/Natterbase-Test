@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import Sidebar from '../components/sidebar/Sidebar'
 import Header from "../components/Header"
 import MainContentHeader from "../components/mainContent/MainContentHeader";
+import MainContentModule from "../components/mainContent/MainContentModule";
 
 
 const DashboardModule = () => {
@@ -14,11 +15,11 @@ const DashboardModule = () => {
         <Sidebar />
         <div className="main-wrap">
           <Header
-            orgImage={ require('../images/fcmb-logo.svg') }
+            orgImage={ orgInfo.orgLogo }
             orgName={ orgInfo.orgName }
             ownerRole={ require('../images/role-icon.svg') }
             ownerBadge={ require('../images/badge-icon.svg') }
-            ownerImage={ require('../images/chioma-davis.png') }
+            ownerImage={ orgOwner.ownerOne.ownerImage }
             ownerName={ orgOwner.ownerOne.ownerName }
             ownerEmail={ orgOwner.ownerOne.ownerEmail }
           />
@@ -34,6 +35,7 @@ const DashboardModule = () => {
               deadlineIcon={ require('../images/deadline-clock-icon.svg') }
               limit={ '6 weeks' }
             />
+            <MainContentModule />
           </div>
         </div>
       </div>

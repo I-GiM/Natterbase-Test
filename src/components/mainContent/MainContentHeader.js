@@ -5,9 +5,9 @@ import React from "react"
 const MainContentHeader = (props) => {
   return (
     <React.Fragment>
-      <div className="content-header--wrap bg-white">
+      <div className="content-header--wrap">
         <div className="content-header--left">
-          <nav className="navbar navbar-expand-lg bg-white p-0 bg-light">
+          <nav className="navbar navbar-expand-lg p-0 bg-light">
             <a className="nav-link content-header--links" href="#">{props.firstLink}</a>
             <button className="content-header--collapse-btn navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
