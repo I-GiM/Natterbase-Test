@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import Sidebar from '../components/sidebar/Sidebar'
 import Header from "../components/Header"
+import MainContentHeader from "../components/mainContent/MainContentHeader";
 
 
 const DashboardModule = () => {
@@ -22,7 +23,17 @@ const DashboardModule = () => {
             ownerEmail={ orgOwner.ownerOne.ownerEmail }
           />
           <div className="dashboard-content">
-
+            <MainContentHeader
+              firstLink={ 'Overview' }
+              secondLink={ 'Teams' }
+              thirdLink={ 'Modules'}
+              fourthLink={ 'Files' }
+              fifthLink={ 'Progress' }
+              allTasks={ 'All Task' }
+              allModules={ 'All Modules' }
+              deadlineIcon={ require('../images/deadline-clock-icon.svg') }
+              limit={ '6 weeks' }
+            />
           </div>
         </div>
       </div>
