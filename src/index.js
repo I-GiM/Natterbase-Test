@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles/bootstrap.css'
 import './styles/Style.css';
 import './fonts/futura-heavy-font.ttf'
 import App from './App';
