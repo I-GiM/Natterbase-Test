@@ -13,9 +13,6 @@
 body {
   background-color: #F7F7F7;
 }
-.fcmb {
-  font-family: 'Futura';
-}
 
 /* Dashboard*/
 .dashboard-wrap {
@@ -27,7 +24,7 @@ body {
   /*position: fixed;*/
   /*left: 0;*/
   /*top: 0;*/
-  width: 96px;
+  width: 6.67vw;
   height: 904px;
   background-color: #052231;
 }
@@ -116,7 +113,116 @@ body {
   justify-content: flex-end;
 }
 
-
+/* Main Section of dashboard */
+.main-wrap {
+  width: 93.33vw;
+}
+.header-wrap {
+  background-color: #FBFBFB;
+  padding: 0 10vw 0 32px;
+  height: 86px;
+  width: 93.33vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--left-items-wrap {
+  display: flex;
+  align-items: center;
+  /*width: 40vw;*/
+}
+.header-menu-icon {
+  margin-right: 40px;
+}
+.org-info-wrap {
+  display: flex;
+  align-items: center;
+}
+.org-image {
+  margin-right: 10px;
+}
+.org-name {
+  font-family: 'Futura';
+  font-size: 1.125rem;
+  margin-right: 12px;
+}
+.more-icon {
+  margin-right: 46px;
+}
+.header--search-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-left: 1px solid rgba(45, 45, 45, 0.1);
+  height: 30px;
+}
+.header--search-icon {
+  margin-right: 12px;
+}
+.header--search-input {
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: #FBFBFB;
+}
+.header--search-input:focus {
+  border: none;
+  outline: none;
+}
+::placeholder {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #2D2D2D;
+}
+.header--right-items-wrap {
+  /*width: 26vw;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--notification {
+  /*margin-right: 25px;*/
+}
+.header--role-icon {
+  margin-left: 25px;
+  /*margin-right: 23px;*/
+}
+.header--badge-icon {
+  margin-left: 23px;
+  /*margin-right: 32px;*/
+}
+.owner-details-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+.owner-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  /*margin-right: 15px;*/
+}
+.owner-info-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.owner-name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #03293D;
+}
+.owner-email {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #23B3E8;
+}
+.chevron-down {
+  margin-left: 20px;
+}
 
 /* Bottom Alert */
 .bottom-alert {
@@ -132,5 +238,51 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
+  text-align: center;
 }
 
+
+/* Media Query for less than 1024px screen width*/
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 15vw;
+  }
+  .main-wrap {
+    width: 85vw;
+  }
+  .header-wrap {
+    padding-right: 13vw;
+    width: 85vw;
+  }
+  .org-name,
+  .header--role-icon,
+  .header--badge-icon {
+    display: none;
+  }
+  .bottom-alert {
+    padding: 0 5vw;
+  }
+}
+
+/* Media Query for less than 768px screen width*/
+@media (max-width: 768px) {
+  .header-wrap {
+    padding: 0 5vw;
+  }
+  .header--search-wrap,
+  .owner-info-wrap {
+    display: none;
+  }
+}
+
+/* Media Query for less than 425px screen width*/
+@media (max-width: 425px) {
+  .header-wrap {
+    padding: 0 5vw;
+  }
+  .header-menu-icon,
+  .header--search-wrap,
+  .owner-info-wrap {
+    display: none;
+  }
+}
