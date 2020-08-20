@@ -25,7 +25,7 @@ body {
   /*left: 0;*/
   /*top: 0;*/
   width: 6.67vw;
-  height: 904px;
+  /*height: 904px;*/
   background-color: #052231;
 }
 .logo-wrap {
@@ -231,6 +231,7 @@ body {
 .content-header--wrap {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(165, 164, 164, 0.2);
 }
 .content-header--links {
   padding: 3px 0 15px 0 !important;
@@ -327,7 +328,7 @@ body {
   /*width: 948px;*/
   max-width: 100%;
   overflow: auto;
-  max-height: 600px;
+  max-height: 650px;
 }
 .module-wrap {
   width: 15vw;
@@ -454,6 +455,253 @@ body {
   opacity: 0.5;
 }
 
+/* Dashboard Test */
+.all-test--wrap {
+  margin-top: 45px;
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  max-height: 650px;
+}
+.test-filled {
+  height: 600px;
+  overflow-y: auto;
+}
+.added-test--dropdown {
+  display: none;
+}
+.added-test-wrap {
+  width: 400px;
+  margin-right: 22px;
+}
+.added-title {
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #03293D;
+  margin-bottom: 22px;
+}
+.added-item-wrap {
+  background-color: #FFFFFF;
+  height: 600px;
+  padding: 28px 0 40px;
+}
+.added-item--scroll {
+  height: 474px;
+  overflow-y: auto;
+}
+.added-test-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px 0 20px;
+  align-items: center;
+}
+.added-test-item--title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #03293D;
+  white-space: pre-wrap;
+}
+.added-test--dropdown-wrap {
+  display: flex;
+}
+.added-item--button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-left: 13px;
+  width: 73px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  cursor: pointer;
+  margin: 10px 0;
+}
+.added-item--selected-pass {
+  background-color: #4DBD98;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+}
+.added-item--selected-failed {
+  background: #EB0E43;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+}
+.added-item--selected-retest {
+  background: #F15832;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+}
+.added-item--selected-untest {
+  background-color: #E8E7EA;
+  border: 2px solid #8B8B8B;
+  color: #8B8B8B;
+}
+.added-item--chevron {
+  position: relative;
+  left: 60px;
+  cursor: pointer;
+}
+.added-test--select-inner {
+  content: url('../images/check-circle.svg');
+}
+.added-test--dropdown {
+  position: absolute;
+  margin-top: 40px;
+  width: 163px;
+  height: 173px;
+  background-color: #FFFFFF;
+  padding-top: 9px;
+}
+.added-test--search-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  height: 29px;
+  padding: 0 15px 0 9px;
+  background-color: rgba(26, 12, 47, 0.06);
+  border-radius: 5px;
+  margin: 0 14px 10px 9px;
+}
+.added-test--search-input {
+  width: 70px;
+  font-size: 0.625rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgba(3, 41, 61, 0.3);
+}
+.added-test--option {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #03293D;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 9px;
+}
+.added-test--new-test {
+  height: 38px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px 0 20px;
+}
+.added-test--new-test--new {
+  background-color: #23B3E8;
+  color: #FFFFFF;
+  border: 2px solid rgba(26, 12, 47, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 145px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.added-test--new-test--test {
+  background-color: #FFFFFF;
+  color: #03293D;
+  border: 2px solid #03293D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 145px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick-overview-wrap {
+  width: 400px;
+}
+.overview-wrap {
+  background-color: #FFFFFF;
+  height: 600px;
+  padding: 45px 40px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 112px);
+  grid-gap: 20px 10px;
+}
+.overview-item-wrap-1 {
+  background-color: #F15832;
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item-wrap-2 {
+  background-color: rgba(3, 41, 61, 0.8);
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item-wrap-3 {
+  background-color: #296799;
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item-wrap-4 {
+  background-color: #F8426E;
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item-wrap-5 {
+  background-color: #4DBD98;
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item-wrap-6 {
+  background-color: #3D43A2;
+  padding: 13px 25px 15px 14px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview-item--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overview-num {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+.overview-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.show {
+  display: block;
+}
 
 /* Media Query for less than 1024px screen width*/
 @media (max-width: 1024px) {
@@ -494,6 +742,9 @@ body {
   }
   .content-header--wrap {
     flex-direction: column;
+  }
+  .all-modules--wrap {
+    max-height: 600px;
   }
 }
 

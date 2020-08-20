@@ -38,7 +38,7 @@ const ModuleItem = (props) => {
       </div>
       <div className="module-item--details">
         <div className="module-item--date">
-          <span className="module-item--details-text"><img className=".bottom-alert--img" src={ require('../../../images/due-date-icon.svg')}/> Due Aug 8</span>
+          <span className="module-item--details-text"><img className=".bottom-alert--img" src={ require('../../../images/due-date-icon.svg')} alt=""/> Due Aug 8</span>
         </div>
         <div className="module-item--devs">
           {visibleDev.map((dev, index) => (
