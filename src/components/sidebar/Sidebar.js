@@ -5,6 +5,19 @@ import UserIcon from "./UserIcon"
 
 const Sidebar = () => {
   //Set Users to local storage to get initials
+
+  // const url = 'http://localhost:3000/'
+  const url = 'https://natterbase-app-test.surge.sh/'
+  const hideHome = () => {
+    if (window.location.href === url) {
+      return <div className="menu-icon">
+        <img src={require('../../images/home-icon.svg')} alt=""/>
+      </div>
+    } else {
+      return ''
+    }
+  }
+
   const users = {
     one: {'name': 'Precious Njama'},
     two: {'name': 'Jamal Ifeoluwa'},
@@ -46,9 +59,7 @@ const Sidebar = () => {
           <img className="logo" src={require('../../images/logo.svg')} alt=""/>
         </div>
         <div className="menu-wrap">
-          <div className="menu-icon">
-            <img src={require('../../images/home-icon.svg')} alt=""/>
-          </div>
+          { hideHome() }
           <div className="menu-icon menu-icon--background">
             <img src={require('../../images/module-icon.svg')} alt=""/>
           </div>

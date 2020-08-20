@@ -328,7 +328,7 @@ body {
   /*width: 948px;*/
   max-width: 100%;
   overflow: auto;
-  max-height: 650px;
+  max-height: 700px;
 }
 .module-wrap {
   width: 15vw;
@@ -433,6 +433,12 @@ body {
 .module-empty {
   height: 555px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.module-add-icon {
+  position: absolute;
+  bottom: -200px;
+  left: 1220px;
+  cursor: pointer;
 }
 
 /* Bottom Alert */
