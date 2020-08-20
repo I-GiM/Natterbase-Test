@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 
 
 const MainContentHeader = (props) => {
-  console.log(window.location.href)
   // const url = 'http://localhost:3000/'
   const url = 'https://natterbase-app-test.surge.sh/'
   const showToggle = () => {

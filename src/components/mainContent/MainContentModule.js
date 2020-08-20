@@ -28,6 +28,7 @@ const MainContentModule = () => {
           <React.Fragment key={index}>{ module }</React.Fragment>
         ))}
       </div>
+      <img className="module-add-icon" src={ require('../../images/add-icon.svg') } alt="" />
     </React.Fragment>
   )
 }
